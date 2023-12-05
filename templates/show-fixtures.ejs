@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixtures</title>
+</head>
+<body>
+    <h1>Fixtures</h1>
+    <% if (fixtures && fixtures.length > 0) { %>
+        <ul>
+            <% fixtures.forEach(function(fixture) { %>
+                <li><%= fixture %></li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No fixtures found.</p>
+    <% } %>
+</body>
+</html>
